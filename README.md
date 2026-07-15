@@ -1,4 +1,5 @@
 [![Chat](https://img.shields.io/discord/259087343246508035.svg)](https://discord.gg/material-components)
+[![Build Catalog APK](https://github.com/Ice1984m/material-components-android/actions/workflows/build-apk.yml/badge.svg)](https://github.com/Ice1984m/material-components-android/actions/workflows/build-apk.yml)
 
 # Material Components for Android
 
@@ -9,6 +10,15 @@ development workflow to build beautiful and functional Android apps.
 
 Material Components for Android is a drop-in replacement for Android's
 Design Support Library.
+
+## Download Catalog APK
+
+**Direct download link:**
+[⬇️ Download latest debug APK](https://github.com/Ice1984m/material-components-android/releases/download/latest/catalog-debug.apk)
+
+> The APK is automatically built and published on every push to `main`.
+> After downloading, install `catalog-debug.apk` on your Android device
+> (make sure *Install from unknown sources* is enabled in your device settings).
 
 ## Getting Started
 
