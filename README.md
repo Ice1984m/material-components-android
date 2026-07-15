@@ -13,13 +13,12 @@ Design Support Library.
 
 ## Download Catalog APK
 
-You can download and install the latest debug APK directly from GitHub Actions:
+**Direct download link:**
+[⬇️ Download latest debug APK](https://github.com/Ice1984m/material-components-android/releases/download/latest/catalog-debug.apk)
 
-1. Go to the [**Actions tab**](https://github.com/Ice1984m/material-components-android/actions/workflows/build-apk.yml)
-2. Click the latest successful workflow run
-3. Scroll down to **Artifacts** and download **catalog-debug-apk**
-4. Unzip the downloaded file and install `catalog-debug.apk` on your Android device
-   (make sure *Install from unknown sources* is enabled in your device settings)
+> The APK is automatically built and published on every push to `main`.
+> After downloading, install `catalog-debug.apk` on your Android device
+> (make sure *Install from unknown sources* is enabled in your device settings).
 
 ## Getting Started
 

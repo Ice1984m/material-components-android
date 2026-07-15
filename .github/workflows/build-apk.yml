@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v4
@@ -23,8 +25,18 @@ jobs:
       - name: Build catalog APK
         run: ./gradlew :catalog:assembleDebug
 
-      - name: Upload APK
+      - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: catalog-debug-apk
           path: catalog/build/outputs/apk/debug/catalog-debug.apk
+
+      - name: Publish APK as latest release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest Debug APK
+          body: "Automatically built debug APK from the latest commit on main."
+          prerelease: true
+          files: catalog/build/outputs/apk/debug/catalog-debug.apk
